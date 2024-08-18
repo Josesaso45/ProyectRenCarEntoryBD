@@ -1,0 +1,79 @@
+body{
+    font-family: 'Helvetica';
+    margin: 0;
+    padding: 0 60px;
+}
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url('../img/fondo 2.jpg') no-repeat center/cover ;
+    opacity: 0.9;
+    z-index: -1;
+    filter: blur(1px);
+}
+
+/*termina fondo de imagen portal login / inicia el login div*/
+body h1{
+    text-align: center;
+    font-size: 50px;
+    filter: drop-shadow(0px 0px 20px #667BC6);/*sombra alrededor del titulo*/
+}
+section{
+    position: relative; 
+    border-radius: 30px;
+    padding: 20px 40px;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.3);/*0.6*/
+    background: rgba(0, 0, 0, 0.211);
+    text-align: center;
+    overflow: hidden; 
+    color: white;
+}
+
+section p{
+    text-align: left;
+}
+#loginUser{
+    height: 430px;
+    align-content: center;
+}
+
+/*login formulario*/
+.input-group{
+    position: relative;
+    margin-bottom: 50px;
+}
+.input-group-input{
+    font: inherit;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: 2px solid #fff;
+    background-color: transparent;
+    transition: outline-color 500ms;
+}
+
+.input-group-input:is(:focus, :valid){
+    outline-color: #3c50eb;
+}
+
+.input-group-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 10px 10px;
+    color: #fff;
+    transition: translate 500ms, scale 500ms;
+    text-align: center;
+}
+
+
+.input-group-input:focus + .input-group-label, .input-group-input:valid + .input-group-label{
+    padding-inline: 5px;
+    translate: 10px -14px;
+    scale: 0.8;
+    background-color: #000;
+}
