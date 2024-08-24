@@ -33,7 +33,9 @@ section{
 }
 
 section p{
-    text-align: left;
+    margin-top: 50PX;
+    font-size: 20px;
+    text-align: center;
 }
 #loginUser{
     height: 430px;
@@ -45,6 +47,7 @@ section p{
     position: relative;
     margin-bottom: 50px;
 }
+
 .input-group-input{
     font: inherit;
     color: #fff;
@@ -53,7 +56,12 @@ section p{
     border-radius: 4px;
     outline: 2px solid #fff;
     background-color: transparent;
+}
+
+.input-group-input:hover{
+    color: #fff;
     transition: outline-color 500ms;
+
 }
 
 .input-group-input:is(:focus, :valid){
@@ -76,4 +84,34 @@ section p{
     translate: 10px -14px;
     scale: 0.8;
     background-color: #000;
+}
+
+#btnIngresar{
+    background-color: #3c50eb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btnIngresar:hover{
+    transition: 500ms;
+    background-color: #b3baec;
+    transform: scale(1.1);
+}
+
+#btnRegistrarse{
+    background-color: #3c50eb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btnRegistrarse:hover{
+    transition: 500ms;
+    background-color: #b3baec;
+    transform: scale(1.1);
 }

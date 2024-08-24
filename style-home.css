@@ -151,7 +151,7 @@ body {
     }
     
         .header-contact :hover {
-        background-color: #004499;
+        background-color: #583c3c;
         transform: scale(1.1);
     }
     
@@ -491,6 +491,10 @@ nav ul li:hover > .submenu {
     
 }
 
+.text{
+    margin-block-end: 30px;
+}
+
 .btn_cita{
     width: 228px;
     height: 48px;
@@ -498,7 +502,6 @@ nav ul li:hover > .submenu {
     background: #444444;
     color: #FFFFFF;
     border-color: #444444;
-    border-width: 1px;
     border-style: solid;
     border-radius: 5px;
     font-family: "Source Sans 3";
