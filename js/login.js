@@ -37,14 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const password = document.getElementById('password').value;
 
         if (email && password) {
-            // Obtener datos de usuarios almacenados
+            //localstorage estan almacenados los registros
             let users = JSON.parse(localStorage.getItem('users')) || [];
             
-            // Buscar usuario con el email y contraseña proporcionados
             let user = users.find(user => user.email === email && user.password === password);
 
             if (user) {
-                window.location.href = '../html/index.html'; // Redirige a la página de destino
+                window.location.href = '../html/index.html'; // Redirige a la página del portal usuario
             } else {
                 alert('Correo electrónico o contraseña incorrectos. Por favor, intente de nuevo.');
                 document.getElementById('email').value = '';
