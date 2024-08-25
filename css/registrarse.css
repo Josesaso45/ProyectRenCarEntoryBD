@@ -1,4 +1,4 @@
-html, body {
+body {
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 0;
@@ -12,7 +12,6 @@ main {
 
 aside {
     background-color: aliceblue;
-    
     display: flex;
     flex-direction: column;
 }
@@ -34,10 +33,6 @@ aside {
     background-image: url(../img/pista.jpg);
     background-size: cover;
     filter: brightness(120%);
-}
-
-.parte1 {
-    
 }
 
 .parte1 h1{
