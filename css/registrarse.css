@@ -1,6 +1,8 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+html,body {
     height: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Source Sans 3';
     padding: 0;
     margin: 0;
 }
@@ -8,20 +10,20 @@ body {
 main {
     display: flex;
     height: 100%;
+    margin: 0;
 }
 
 aside {
-    background-color: aliceblue;
     display: flex;
     flex-direction: column;
 }
 
 .registrarse {
     background-color: white;
-    width: 65%;
+    width: 55%;
     height: 100%;
     text-align: center;
-    padding: 50px 0px ;
+    align-content: center;
 }
 
 .decoracion {
@@ -32,11 +34,28 @@ aside {
     text-align: center;
     background-image: url(../img/pista.jpg);
     background-size: cover;
-    filter: brightness(120%);
 }
 
 .parte1 h1{
-    font-size: 30px;
+    font-size: 45px;
+    color: #000000;
+    margin-top: 20px;
+}
+.parte1 h5{
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+}
+.parte1 h6{
+    font-family: "Helvetica";
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    padding: 0px 150px;
+    margin-bottom: 0;
 }
 .parte2 {
     display: flex;
@@ -46,20 +65,21 @@ aside {
 }
 
 .parte2 img {
-    width: 400px;
+    width: 500px;
     filter: brightness(80%);
 }
 .parte2 img:hover{
     filter: brightness(100%);
 }
 
-.parte3 {
-    margin-top: auto;
-    width: 100%;
-    font-size: 14px;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+.parte3{
+    color: #FFFFFf;
+    font-family: "Source Sans 3";
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
 }
+
 /*termina parte izquierda, empieza el formulario registrarse*/
 
 .linea-con-letra {
@@ -188,4 +208,3 @@ a:hover {
 .form-group_password ,.form-group_correo{
     margin-bottom: 35px;
 }
-
