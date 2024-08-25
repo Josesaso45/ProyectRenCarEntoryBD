@@ -53,6 +53,7 @@ a {
     background: transparent;
     border-radius: 6px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 
@@ -161,7 +162,7 @@ text-align: center;
     justify-content: space-between;
 }
 .form_container a{
-    color: #ebb991;
+    color: #F05454;
     font-size: 12px;
 }
 .form_container a:hover{
