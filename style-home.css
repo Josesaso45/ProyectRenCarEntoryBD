@@ -3,14 +3,13 @@
 body {
     padding: 0px;
     margin: 0px;
-    background-color: #007bff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    background-color: #222831;
     
 /* Remove the extra closing brace */
 /*INICIO - Header*/
 /* Header Styles */
-.header-container {
+.header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,11 +55,11 @@ body {
     .logo {
         width: 120px;
         height: auto;
-        transition: transform 0.3s ease-in-out;
     }
     
     .logo:hover {
         transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
     }
     
     nav {
@@ -92,54 +91,30 @@ body {
         color: #FDF0CE;
     }
     
-    .submenu {
+    .submenu-marcas {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
         background-color: white;
-        border-top: 3px solid #2E1572;
+        border-top: 3px solid #2E1572; /* Cambia el color del borde superior */
         z-index: 1000;
         min-width: 200px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     
-    nav ul li:hover > .submenu {
+    nav ul li:hover > .submenu-marcas {
         display: block;
         animation: fadeIn 0.3s ease-in-out;
     }
     
-    .submenu li {
+    .submenu-marcas li {
         margin-bottom: 0;
     }
     
-    .submenu li a {
+    .submenu-marcas li a {
         padding: 10px 20px;
         color: #000000;
-    }
-    
-    .header-contact {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    
-    .header-contact .btn {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        background-color: #0056b3;
-        color: #FFFFFF;
-        padding: 10px 20px;
-        border-radius: 5px;
-        margin-bottom: 5px;
-        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    }
-    
-    .header-contact .btn:hover {
-        background-color: #004499;
-        transform: scale(1.1);
     }
     
     .header-carrito {
@@ -223,33 +198,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FDF0CE;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    border-top: 3px solid #2E1572;
-    z-index: 1000;
-    min-width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-nav ul li:hover > .submenu {
-    display: block;
-    animation: fadeIn 0.3s ease-in-out;
-}
-
-.submenu li {
-    margin-bottom: 0;
-}
-
-.submenu li a {
-    padding: 10px 20px;
-    color: #000000;
+    color: #cefde2;
 }
 
 .header-contact {
@@ -299,70 +248,64 @@ nav ul li:hover > .submenu {
 
 /*pie de pagina*/
 
-#piepag{
-    background-color: #2E1572;
-    color: white;
-    display: flex;
-    padding: 0px;
-    justify-content: center;
-    margin-top: 15px;
+.footer {
+    background-color: #222831;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-#pietitulo{
-	font-family: "Source Sans 3", sans-serif;
-	font-weight: bold;
-	font-size: 28px;
-	line-height: 1.28;
-	text-align: center;
-    margin-bottom: 1px;
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-#piep{
-    width: 300px;
-    height: 99px;
-    color: #FFFFFF;
-    font-family: "Helvetica", Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 1.3;
-    text-align: justify;
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
     margin-bottom: 10px;
 }
-#pielink{
-    line-height: 1.5;
-}
-#pie2{
-    text-align: center;
-    margin-right: 200px;
-    margin-left: 200px;
-}
-#pie2titulo{
-    font-family: "Arial";
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-}
-#pie2 p{
-    font-family: "Helvetica";
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.3;
-    text-align: left;
-}
-#pie2bajo{
-    margin-top: 30px;
-}
-#pie2bajo img{
-    width: 35px;
 
+.footer-section ul {
+    list-style: none;
+    padding: 0;
 }
-#pie3{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+
+.footer-section ul li {
+    margin-bottom: 10px;
 }
-#pie3 h4{
-    font-weight: bold;
-    font-size: 20px;
-    text-align: left;
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
 }
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .socials a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-section .socials img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+    */
 #inpform input{
     width: 180px;
     height: 20px;
@@ -462,7 +405,7 @@ nav ul li:hover > .submenu {
 
 .parte1{
     padding: 0px 150px 0px;
-    background-color: #2E1572;
+    background-color: #30475E;
     color: white;
     display: flex;
     align-items: top;
@@ -508,12 +451,22 @@ nav ul li:hover > .submenu {
     font-weight: 700;
     font-size: 16px;
     text-align: center;
+    border: black solid 2px;
 }
+
+.btn_cita:hover{
+    transition: 500ms;
+    background-color: #222831;
+    transform: scale(1.1);
+}
+
 /*aqui inicia la parte 2*/
 .parte2{
     display: flex;
     justify-content: center;
+    background-color: #222831;
 }
+
 .parte2 img{
     width: 200px;
     height: 174px;
@@ -537,6 +490,12 @@ nav ul li:hover > .submenu {
     border-style: solid;
     border-radius: 25px 25px 25px 25px;
 }
+
+.img_1:hover, .img_2:hover, .img_3:hover, .img_4:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
 .img_1 h5, .img_2 h5, .img_3 h5, .img_4 h5{
     margin-top: 0;
 }
@@ -570,12 +529,12 @@ nav ul li:hover > .submenu {
     width: 56px;
     height: 56px;
     background: #EBEBEB;
-    border-radius: 19px;
+    border-radius: 50%;
     text-align: center;
 }
 .circulo img{
-    width: 34px;
-    height: 34px;
+    width: 80%;
+    height: 80%;
     text-align: center;
     padding: 8px;
 }
@@ -666,7 +625,7 @@ nav ul li:hover > .submenu {
     text-align: center;
     margin-left: 50px;
 }             
-                                                                /*fila 2 */         
+ /*fila 2 */         
 .fila2{
     display: flex;
     justify-content: left;
