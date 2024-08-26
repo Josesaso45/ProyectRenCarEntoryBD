@@ -11,6 +11,240 @@ background-color: #f0f0f0;
 color: #333;
 line-height: 1.6;
 }
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(184, 46, 46, 0.1);
+}
+
+.img_logo {
+    flex: 1;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease-in-out    
+}
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    
+    body {
+        padding: 0px;
+        margin: 0px;
+        background-color: #007bff;
+    }
+    
+    /*INICIO - Header*/
+    /* Header Styles */
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #007bff;
+        padding: 10px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .img_logo {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 120px;
+        height: auto;
+    }
+    
+    .logo:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    nav {
+        flex: 2;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        position: relative;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    nav ul li a:hover {
+        color: #FDF0CE;
+    }
+    
+    .submenu-marcas {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        border-top: 3px solid #2E1572; /* Cambia el color del borde superior */
+        z-index: 1000;
+        min-width: 200px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav ul li:hover > .submenu-marcas {
+        display: block;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+    
+    .submenu-marcas li {
+        margin-bottom: 0;
+    }
+    
+    .submenu-marcas li a {
+        padding: 10px 20px;
+        color: #000000;
+    }
+    
+    .header-carrito {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        height: 100px; /* Ajusta la altura según sea necesario */
+        width: 50%; /* Ajusta el ancho según sea necesario */
+    }
+    
+        .header-contact :hover {
+        background-color: #583c3c;
+        transform: scale(1.1);
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
+        align-items: center; /* Centra verticalmente los elementos hijos */
+        padding: 0 20px; /* Ajusta el padding según sea necesario */
+    }
+    
+    .header-carrito {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente la imagen dentro del contenedor */
+        align-items: center; /* Centra verticalmente la imagen dentro del contenedor */
+        height: 100px; /* Ajusta la altura según sea necesario */
+        width: 50px; /* Ajusta el ancho según sea necesario */
+        margin-left: auto; /* Empuja el contenedor hacia la derecha */
+    }
+    
+    .header-carrito img {
+        max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+    
+    /* Animations */header-carrito img {
+        max-width: 50%; /* Asegura que la imagen no exceda el tamaño del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+    /* Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    flex: 2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #cefde2;
+}
+
+.header-contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header-contact .btn {
+    text-decoration: none;
+    background-color: #444444;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.header-contact .btn:hover {
+    background-color: #333333;
+}
+
+.contact-info p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info .icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 h2 {
 font-size: 2em;
@@ -20,7 +254,7 @@ margin-bottom: 0.5em;
 section {
 padding: 20px;
 margin: 10px auto;
-background-color: white;
+background-color: #3DC2EC;
 border-radius: 5px;
 max-width: 800px;
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
