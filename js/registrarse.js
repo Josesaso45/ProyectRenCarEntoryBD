@@ -28,3 +28,25 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 //2da opcion usar un array para guardar los datos de registro
+//agregue color random en los titulos del formulario y la portada
+function colorRandom() {
+    const titulo = document.getElementById('titulocolor');
+    const tituloForm = document.getElementById('registrate');
+    
+    function cambiarColor() {
+        const r = Math.floor(Math.random() * 124);
+        const g = Math.floor(Math.random() * 124);
+        const b = Math.floor(Math.random() * 124);
+
+        const colorRGB = `rgb(${r},${g},${b})`;
+        titulo.style.color = colorRGB;
+        tituloForm.style.color = colorRGB;
+    }
+
+    setInterval(cambiarColor, 1000);
+}
+
+function cargarFunciones() {
+    colorRandom();
+
+}
