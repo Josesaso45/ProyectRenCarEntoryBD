@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let user = users.find(user => user.email === email && user.password === password);
 
             if (user) {
-                window.location.href = '../html/index.html'; // Redirige a la página del portal usuario
+                window.location.href = '../html/index.html'; // Redirige a la página del portal usuario,pendiente portal
             } else {
                 alert('Correo electrónico o contraseña incorrectos. Por favor, intente de nuevo.');
                 document.getElementById('email').value = '';
