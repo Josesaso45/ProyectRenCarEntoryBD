@@ -31,47 +31,6 @@ nav ul li {
     position: relative;
 }
 
-/* Estilos para el submenú */
-.submenu-marcas {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    border-top: 3px solid #2E1572; /* Cambia el color del borde superior */
-    z-index: 1000;
-    min-width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Mostrar el submenú al pasar el cursor sobre el elemento padre */
-nav ul li:hover > .submenu-marcas {
-    display: block;
-    animation: fadeIn 0.3s ease-in-out;
-}
-
-/* Estilos para los elementos del submenú */
-.submenu-marcas li {
-    margin-bottom: 0;
-}
-
-.submenu-marcas li a {
-    padding: 10px 20px;
-    color: #000000;
-    text-decoration: none;
-}
-
-/* Animación para el submenú */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 .nav__menu {
     margin-left: auto;
