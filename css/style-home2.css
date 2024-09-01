@@ -74,7 +74,6 @@ body {
     text-decoration: none;
 }
 
-/* Asegúrate de que el contenedor del menú principal tenga position: relative */
 nav ul li {
     position: relative;
 }
@@ -92,7 +91,6 @@ nav ul li {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Mostrar el submenú al pasar el cursor sobre el elemento padre */
 nav ul li:hover > .submenu-marcas {
     display: block;
     animation: fadeIn 0.3s ease-in-out;
